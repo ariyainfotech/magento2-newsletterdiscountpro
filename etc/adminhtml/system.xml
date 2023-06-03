@@ -1,9 +1,6 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="../../../Backend/etc/system_file.xsd">
     <system>
-        <tab id="ariyainfotech" translate="label" sortOrder="700" class="ariyainfotech-extensions">
-            <label>AriyaInfoTech Extensions</label>
-        </tab>
         <section id="newsletterdiscountpro" translate="label" sortOrder="1" showInDefault="1"
                  showInWebsite="1" showInStore="1">
             <class>separator-top</class>
