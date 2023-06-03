@@ -1,24 +1,51 @@
-# Magento 2 - Discount for subscribers by Metagento
+# Mage2 Module AriyaInfoTech BackendOrderDelete
 
-Building an email list is extremely important for online retailers.
+    ``ariyainfotech/module-backendorderdelete``
 
-By providing an offer in exchange for visitors emails address, you not only do increase the chance of a conversion, but you also get their email, providing you with the opportunity to market new products and offers to them in the future.
+ - [Main Functionalities](#markdown-header-main-functionalities)
+ - [Installation](#markdown-header-installation)
+ - [Configuration](#markdown-header-configuration)
+ - [Specifications](#markdown-header-specifications)
+ - [Attributes](#markdown-header-attributes)
 
-Highlight Features:
 
-- Give discount to subscribers ( with the valid date configuration )
-- You can choose type of discount ( Fixed or Percentage )
-- Discount can be calculated on Subtotal or Grandtotal
-- Subscribers can use coupon code to get discount
-- Show offer message in newsletter box 
-- This Newsletter Discount Advanced version support multiple programs
+## Main Functionalities
+Currently, Magento doesn't allow you to delete an order from your store. This extension will help you to do that, simple but helpful.
 
-Install via composer:
+## Installation
+\* = in production please use the `--keep-generated` option
 
-```
-composer require metagento/newsletter-discount-magento2:*
-php bin/magento setup:upgrade
-php bin/magento setup:static-content:deploy
-```
+### Type 1: Zip file
 
-Any question, please contact us https://www.metagento.com/magento-2-discount-for-subscribers.html
+ - Unzip the zip file in `app/code/AriyaInfoTech`
+ - Enable the module by running `php bin/magento module:enable AriyaInfoTech_BackendOrderDelete`
+ - Apply database updates by running `php bin/magento setup:upgrade`\*
+ - Flush the cache by running `php bin/magento cache:flush`
+
+### Type 2: Composer
+
+ - Make the module available in a composer repository for example:
+    - private repository `repo.magento.com`
+    - public repository `packagist.org`
+    - public github repository as vcs
+ - Add the composer repository to the configuration by running `composer config repositories.repo.magento.com composer https://repo.magento.com/`
+ - Install the module composer by running `composer require ariyainfotech/module-backendorderdelete`
+ - enable the module by running `php bin/magento module:enable AriyaInfoTech_BackendOrderDelete`
+ - apply database updates by running `php bin/magento setup:upgrade`\*
+ - Flush the cache by running `php bin/magento cache:flush`
+
+
+## Configuration
+
+
+
+
+## Specifications
+
+
+
+
+## Attributes
+
+
+
