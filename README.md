@@ -1,6 +1,6 @@
-# Mage2 Module AriyaInfoTech BackendOrderDelete
+# Mage2 Module AriyaInfoTech NewsletterDiscountPro
 
-    ``ariyainfotech/module-backendorderdelete``
+    ``ariyainfotech/module-newsletterdiscountpro``
 
  - [Main Functionalities](#markdown-header-main-functionalities)
  - [Installation](#markdown-header-installation)
@@ -10,7 +10,7 @@
 
 
 ## Main Functionalities
-Currently, Magento doesn't allow you to delete an order from your store. This extension will help you to do that, simple but helpful.
+Module Developed By Ariya InfoTech
 
 ## Installation
 \* = in production please use the `--keep-generated` option
@@ -18,7 +18,7 @@ Currently, Magento doesn't allow you to delete an order from your store. This ex
 ### Type 1: Zip file
 
  - Unzip the zip file in `app/code/AriyaInfoTech`
- - Enable the module by running `php bin/magento module:enable AriyaInfoTech_BackendOrderDelete`
+ - Enable the module by running `php bin/magento module:enable AriyaInfoTech_NewsletterDiscountPro`
  - Apply database updates by running `php bin/magento setup:upgrade`\*
  - Flush the cache by running `php bin/magento cache:flush`
 
@@ -29,8 +29,8 @@ Currently, Magento doesn't allow you to delete an order from your store. This ex
     - public repository `packagist.org`
     - public github repository as vcs
  - Add the composer repository to the configuration by running `composer config repositories.repo.magento.com composer https://repo.magento.com/`
- - Install the module composer by running `composer require ariyainfotech/module-backendorderdelete`
- - enable the module by running `php bin/magento module:enable AriyaInfoTech_BackendOrderDelete`
+ - Install the module composer by running `composer require ariyainfotech/module-newsletterdiscountpro`
+ - enable the module by running `php bin/magento module:enable AriyaInfoTech_NewsletterDiscountPro`
  - apply database updates by running `php bin/magento setup:upgrade`\*
  - Flush the cache by running `php bin/magento cache:flush`
 
@@ -46,6 +46,3 @@ Currently, Magento doesn't allow you to delete an order from your store. This ex
 
 
 ## Attributes
-
-
-
