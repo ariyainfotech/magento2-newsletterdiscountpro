@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+	<table name="newsletterdiscountpro_program" resource="default" engine="innodb" comment="newsletterdiscountpro_program Table">
+		<column xsi:type="int" name="program_id" padding="10" unsigned="true" nullable="false" identity="true" comment="Program Id"/>
+		<constraint xsi:type="primary" referenceId="PRIMARY">
+			<column name="program_id"/>
+		</constraint>
+		<column name="from_date" nullable="true" xsi:type="timestamp" comment="From Date"/>
+		<column name="to_date" nullable="true" xsi:type="timestamp" comment="To Date"/>
+		<column name="number_order" nullable="false" xsi:type="int" comment="Number Order" default="0" identity="false"/>
+		<column name="use_coupon" nullable="false" xsi:type="int" comment="User Coupon" default="0" identity="false"/>
+		<column name="coupon_code" nullable="false" xsi:type="varchar" comment="Coupon Code" />
+		<column name="discount_type" nullable="false" xsi:type="varchar" comment="Discount Type" />
+		<column name="discount_value" nullable="false" xsi:type="decimal" comment="Discount Value" default="0" scale="4" precision="12"/>
+		<column name="discount_on" nullable="false" xsi:type="varchar" comment="Discount On" />
+		<column name="created_at" nullable="true" xsi:type="timestamp" comment="Created At"/>
+		<column name="priority" nullable="true" xsi:type="int" comment="Priority" identity="false"/>
+	</table>
+	<table name="sales_order" resource="default" engine="innodb" comment="Sales Order Table">
+		<column name="newsletter_discount" nullable="false" xsi:type="decimal" comment="Newsletter Discount" default="0" />
+		<column name="base_newsletter_discount" nullable="false" xsi:type="decimal" comment="Base Newsletter Discount" default="0" />
+	</table>
+	<table name="sales_invoice" resource="default" engine="innodb" comment="Sales Invoice Table">
+		<column name="newsletter_discount" nullable="false" xsi:type="decimal" comment="Newsletter Discount" default="0" />
+		<column name="base_newsletter_discount" nullable="false" xsi:type="decimal" comment="Base Newsletter Discount" default="0" />
+	</table>
+	<table name="sales_creditmemo" resource="default" engine="innodb" comment="Sales Creditmemo Table">
+		<column name="newsletter_discount" nullable="false" xsi:type="decimal" comment="Newsletter Discount" default="0" />
+		<column name="base_newsletter_discount" nullable="false" xsi:type="decimal" comment="Base Newsletter Discount" default="0" />
+	</table>
+</schema>
